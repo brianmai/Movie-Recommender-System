@@ -11,7 +11,7 @@ COPY . ./
 RUN ls -la $APP_HOME/
 
 # Install dependencies
- && pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Run the streamlit on container startup
 CMD [ "streamlit", "run","--server.enableCORS","false","app.py" ]
