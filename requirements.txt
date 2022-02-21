@@ -24,3 +24,4 @@ urllib3==1.26.6
 xlrd==1.2.0
 yapf==0.31.0
 zipp==3.5.0
+markupsafe==2.0.1
