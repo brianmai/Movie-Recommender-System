@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: movie
+      app: movie-app
   template:
     metadata:
       labels:
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: movie-app
-        image: us-west1-docker.pkg.dev/movie-recommender-engine/movie-repo/movie-app:v1
+        image: us-central1-docker.pkg.dev/movie-recommender-engine/movie-repo/movie-app:v1
         ports:
         - containerPort: 8501
